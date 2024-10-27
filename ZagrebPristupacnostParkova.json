@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Park Adolfa Mošinskog",
+    "location": "+45.8016781+15.9762124CRSWGS_84/",
+    "area": 13701,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND"
+    ],
+    "entrances": [
+      "+45.801959+15.973991CRSWGS_84/",
+      "+45.802105+15.976037CRSWGS_84/",
+      "+45.802086+15.976191CRSWGS_84/",
+      "+45.801955+15.974632CRSWGS_84/",
+      "+45.801374+15.974691CRSWGS_84/",
+      "+45.801265+15.975292CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.801872+15.9761102CRSWGS_84/",
+    "nearest_tram_stop": "+45.8006061+15.9754799CRSWGS_84/",
+    "nearest_train_stop": "45.804614+15.978810CRSWGS_84/",
+    "nearest_parking": "+45.8011579+15.9747273CRSWGS_84/"
+  },
+  {
+    "name": "Park Vjekoslava Majera",
+    "location": "+45.7806235+15.9905192CRSWGS_84/",
+    "area": 62590,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "STREET WORKOUT",
+      "RECREATION"
+    ],
+    "entrances": [
+      "+45.7826469+15.9897843CRSWG_84/",
+      "+45.7826709+15.9912143CRSWG_84/",
+      "+45.7781569+15.9901603CRSWG_84/",
+      "+45.7782243+15.9913565CRSWG_84/",
+      "+45.7802529+15.9899103CRSWG_84/",
+      "+45.7823979+15.9914393CRSWG_84/",
+      "+45.7784699+15.9916833CRSWG_84/",
+      "+45.7786479+15.9916403CRSWG_84/",
+      "+45.7790279+15.9916213CRSWG_84/",
+      "+45.7792559+15.9916163CRSWG_84/",
+      "+45.7800339+15.9915783CRSWG_84/"
+    ],
+    "nearest_bus_stop": "+45.777701+15.991562CRSWGS_84/",
+    "nearest_tram_stop": "+45.777789+15.991300CRSWGS_84/",
+    "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
+    "nearest_parking": "+45.778320+15.989106CRSWGS_84/"
+  },
+  {
+    "name": "Park Ribnjak",
+    "location": "+45.816089+15.980713CRSWGS_84/",
+    "area": 47040,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND"
+    ],
+    "entrances": [
+      "+45.818422+15.978821CRSWGS_84/",
+      "+45.817828+15.980060CRSWGS_84/",
+      "+45.816306+15.981160CRSWGS_84/",
+      "+45.814439+15.981444CRSWGS_84/",
+      "+45.814901+15.981676CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.818853+15.979184CRSWGS_84/",
+    "nearest_tram_stop": "+45.819988+15.979423CRSWGS_84/",
+    "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
+    "nearest_parking": "+45.814481+15.981614CRSWGS_84/"
+  },
+  {
+    "name": "Park šuma Tuškanac",
+    "location": "+45.823529+15.968992CRSWGS_84/",
+    "area": 106906,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "HIKING",
+      "RECREATION",
+      "STREET WORKOUT"
+    ],
+    "entrances": [
+      "+45.825385+15.968332CRSWGS_84/",
+      "+45.821356+15.968568CRSWGS_84/",
+      "+45.821292+15.969410CRSWGS_84/",
+      "+45.822193+15.969769CRSWGS_84/",
+      "+45.823722+15.969936CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.821292+15.968654CRSWGS_84/",
+    "nearest_tram_stop": "+45.813289+15.969710CRSWGS_84/",
+    "nearest_train_stop": "+45.809178+15.954241CRSWGS_84/",
+    "nearest_parking": "+45.816421+15.969890CRSWGS_84/"
+  },
+  {
+    "name": "Park kralja Petra Krešimira IV",
+    "location": "+45.807632+15.990537CRSWGS_84/",
+    "area": 22255,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "DOGPARK",
+      "RECREATION"
+    ],
+    "entrances": [
+      "+45.808173+15.990323CRSWGS_84/",
+      "+45.807717+15.991058CRSWGS_84/",
+      "+45.807743+15.991425CRSWGS_84/",
+      "+45.808547+15.990701CRSWGS_84/",
+      "+45.807358+15.991076CRSWGS_84/",
+      "+45.807702+15.989641CRSWGS_84/",
+      "+45.807188+15.989708CRSWGS_84/",
+      "+45.806801+15.989714CRSWGS_84/",
+      "+45.808209+15.989760CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.813061+15.998834CRSWGS_84/",
+    "nearest_tram_stop": "+45.807796+15.991651CRSWGS_84/",
+    "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
+    "nearest_parking": "+45.803899+15.994167CRSWGS_84/"
+  },
+  {
+    "name": "Park Bundek",
+    "location": "+45.784635+15.989522CRSWGS_84/",
+    "area": 562923,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "DOGPARK",
+      "RECREATION",
+      "ACCESSIBLE PLAYGROUND",
+      "STREET WORKOUT",
+      "AMPHITHEATER",
+      "WATER FEATURE"
+    ],
+    "entrances": [
+      "+45.787553+15.981385CRSWGS_84/",
+      "+45.787414+15.983697CRSWGS_84/",
+      "+45.786539+15.990290CRSWGS_84/",
+      "+45.786075+15.992564CRSWGS_84/",
+      "+45.785593+15.994581CRSWGS_84/",
+      "+45.784373+15.998701CRSWGS_84/",
+      "+45.783670+16.000402CRSWGS_84/",
+      "+45.782241+15.999533CRSWGS_84/",
+      "+45.782330+15.998562CRSWGS_84/",
+      "+45.782903+15.994082CRSWGS_84/",
+      "+45.782948+15.992913CRSWGS_84/",
+      "+45.782892+15.992049CRSWGS_84/",
+      "+45.782903+15.990172CRSWGS_84/",
+      "+45.782854+15.989748CRSWGS_84/",
+      "+45.782993+15.986545CRSWGS_84/",
+      "+45.783584+15.983268CRSWGS_84/",
+      "+45.783752+15.980639CRSWGS_84/",
+      "+45.785978+15.980022CRSWGS_84/",
+      "+45.786861+15.979974CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.787601+15.981401CRSWGS_84/",
+    "nearest_tram_stop": "+45.777789+15.991300CRSWGS_84/",
+    "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
+    "nearest_parking": "+45.783546+15.983358CRSWGS_84/"
+  },
+  {
+    "name": "Park Mladenaca",
+    "location": "+45.775755+15.967226CRSWGS_84/",
+    "area": 94891,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "DOGPARK",
+      "STREET WORKOUT"
+    ],
+    "entrances": [
+      "+45.776835+15.966140CRSWGS_84/",
+      "+45.776460+15.965948CRSWGS_84/",
+      "+45.774197+15.965783CRSWGS_84/",
+      "+45.772289+15.965652CRSWGS_84/",
+      "+45.770787+15.965812CRSWGS_84/",
+      "+45.770321+15.967722CRSWGS_84/",
+      "+45.770855+15.968084CRSWGS_84/",
+      "+45.771403+15.968130CRSWGS_84/",
+      "+45.771829+15.968090CRSWGS_84/",
+      "+45.772352+15.968010CRSWGS_84/",
+      "+45.775543+15.968011CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.776907+15.964093CRSWGS_84/",
+    "nearest_tram_stop": "+45.777139+15.965139CRSWGS_84/",
+    "nearest_train_stop": "+45.766490+15.945836CRSWGS_84/",
+    "nearest_parking": "+45.782600+15.979240CRSWGS_84/"
+  },
+  {
+    "name": "Park pravednika među narodima",
+    "location": "+45.805964+15.944388CRSWGS_84/",
+    "area": 38096,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "DOGPARK",
+      "STREET WORKOUT",
+      "RECREATION"
+    ],
+    "entrances": [
+      "+45.804747+15.945398CRSWGS_84/",
+      "+45.805106+15.943226CRSWGS_84/",
+      "+45.805891+15.943097CRSWGS_84/",
+      "+45.806691+15.943113CRSWGS_84/",
+      "+45.807073+15.944497CRSWGS_84/",
+      "+45.806838+15.943863CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.806933+15.944013CRSWGS_84/",
+    "nearest_tram_stop": "+45.813356+15.942316CRSWGS_84/",
+    "nearest_train_stop": "+45.809187+15.954244CRSWGS_84/",
+    "nearest_parking": "+45.803611+15.963404CRSWGS_84/"
+  },
+  {
+    "name": "Park dr. Franje Tuđmana",
+    "location": "+45.811525+15.956100CRSWGS_84/",
+    "area": 33441,
+    "purpose": [
+      "LEISURE",
+      "RECREATION"
+    ],
+    "entrances": [
+      "+45.812990+15.955678CRSWGS_84/",
+      "+45.812268+15.955182CRSWGS_84/",
+      "+45.812035+15.955123CRSWGS_84/",
+      "+45.812014+15.955439CRSWGS_84/",
+      "+45.811182+15.955375CRSWGS_84/",
+      "+45.810184+15.955337CRSWGS_84/",
+      "+45.810173+15.956603CRSWGS_84/",
+      "+45.811302+15.956737CRSWGS_84/",
+      "+45.812932+15.956941CRSWGS_84/",
+      "+45.812994+15.957102CRSWGS_84/",
+      "+45.813048+15.956517CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.812650+15.955161CRSWGS_84/",
+    "nearest_tram_stop": "+45.813102+15.956527CRSWGS_84/",
+    "nearest_train_stop": "+45.809187+15.954244CRSWGS_84/",
+    "nearest_parking": "+45.811110+15.955225CRSWGS_84/"
+  },
+  {
+    "name": "Park Maksimir",
+    "location": "+45.824565+16.021083CRSWGS_84/",
+    "area": 1890000,
+    "purpose": [
+      "LEISURE",
+      "PLAYGROUND",
+      "DOGPARK",
+      "RECREATION",
+      "HIKING",
+      "STREET WORKOUT",
+      "AMPHITHEATER",
+      "ZOO",
+      "WATER FEATURE"
+    ],
+    "entrances": [
+      "+45.819589+16.015531CRSWGS_84/",
+      "+45.820239+16.018454CRSWGS_84/",
+      "+45.823469+16.025224CRSWGS_84/",
+      "+45.824864+16.026201CRSWGS_84/",
+      "+45.827637+16.026598CRSWGS_84/",
+      "+45.829633+16.027660CRSWGS_84/",
+      "+45.830295+16.028727CRSWGS_84/",
+      "+45.832254+16.028979CRSWGS_84/",
+      "+45.836612+16.025932CRSWGS_84/",
+      "+45.836854+16.024296CRSWGS_84/",
+      "+45.836997+16.022419CRSWGS_84/",
+      "+45.836187+16.017551CRSWGS_84/",
+      "+45.835294+16.015148CRSWGS_84/",
+      "+45.831037+16.014708CRSWGS_84/",
+      "+45.822993+16.013371CRSWGS_84/",
+      "+45.820253+16.012893CRSWGS_84/"
+    ],
+    "nearest_bus_stop": "+45.819443+16.012876CRSWGS_84/",
+    "nearest_tram_stop": "+45.818867+16.013616CRSWGS_84/",
+    "nearest_train_stop": "+45.814052+16.023669CRSWGS_84/",
+    "nearest_parking": "+45.818471+16.016148CRSWGS_84/"
+  }
+]
