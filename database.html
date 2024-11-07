@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title></title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='frontend/main.css'>
+        <script src='frontend/main.js'></script>
+</head>
+<body>
+        <div>
+                <input id="search-text" type="search" placeholder="Pretraživanje...">
+                <label for="fields">u polju</label>
+                <select id="search-field" name="fields">
+                        <option value="*" selected>sva polja</option>
+                        <option value="name">naziv</option>
+                        <option value="location">lokacija</option>
+                        <option value="area">površina</option>
+                        <option value="purpose">namjena</option>
+                        <option value="entrances">ulazi</option>
+                        <option value="nearest_bus_stop">najbliža autobusna stanica</option>
+                        <option value="nearest_tram_stop">najbliža tramvajska stanica</option>
+                        <option value="nearest_train_stop">najbliža željeznička stanica</option>
+                        <option value="nearest_parking">najbliži javni parking</option>
+                </select>
+                <button onclick="search()">Pretraži</button>
+                <br/><br/>
+                <table>
+                        <thead>
+                        <tr>
+                                <th>Name</th>
+                                <th>Location</th>
+                                <th>Area [m&sup2;]</th>
+                                <th>Purpose</th>
+                                <th>Entrances</th>
+                                <th>Nearest bus stop</th>
+                                <th>Nearest tram stop</th>
+                                <th>Nearest train stop</th>
+                                <th>Nearest parking</th>
+                        </tr>
+                        </thead>
+                        <tbody id="datatable">
+
+                        </tbody>
+                </table>
+        </div>
+        <div>
+
+        </div>
+</body>
+</html>

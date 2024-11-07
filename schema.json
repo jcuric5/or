@@ -1,0 +1,69 @@
+{
+        "$schema": "https://json-schema.org/draft/2019-09/schema",
+        "$id": "http://example.com/example.json",
+        "type": "array",
+        "default": [],
+        "title": "Root Schema",
+        "items": {
+            "type": "object",
+            "title": "A Schema",
+            "required": [
+                "name",
+                "location",
+                "area",
+                "purpose",
+                "entrances",
+                "nearest_bus_stop",
+                "nearest_tram_stop",
+                "nearest_train_stop",
+                "nearest_parking"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova imena parka na Hrvatskome jeziku"
+                },
+                "location": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova geografskih koordinata sredine površine parka zapisane u ISO 6709 Annex H standardu"
+                },
+                "area": {
+                    "type": "integer",
+                    "title": "broj koji označava veličinu parka u metrima kvadratnim"
+                },
+                "purpose": {
+                    "type": "array",
+                    "title": "polje predefiniranih UTF-8 nizova znakova koje označavaju usluge koje park nudi",
+                    "items": {
+                        "type": "string",
+                        "title": "A Schema",
+                        "enum": ["LEISURE", "PLAYGROUND", "STREET WORKOUT", "RECREATION", "HIKING", "DOGPARK", "AMPHITHEATER", "WATER FEATURE", "ACCESSIBLE PLAYGROUND", "ZOO"]
+                    }
+                },
+                "entrances": {
+                    "type": "array",
+                    "title": "polje UTF-8 nizova znakova koje naznačavaju geografske koordinate pojedinih ulaza u park zapisane u ISO 6709 Annex H standardu",
+                    "items": {
+                        "type": "string",
+                        "title": "A Schema"
+                    }
+                },
+                "nearest_bus_stop": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova geografskih koordinata najbliže autobusne stanice zapisane u ISO 6709 Annex H standardu"
+                },
+                "nearest_tram_stop": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova geografskih koordinata najbliže tramvajske stanice zapisane u ISO 6709 Annex H standardu"
+                },
+                "nearest_train_stop": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova geografskih koordinata najbliže želejzničke stanice zapisane u ISO 6709 Annex H standardu"
+                },
+                "nearest_parking": {
+                    "type": "string",
+                    "title": "UTF-8 niz znakova geografskih koordinata najbližeg javnog parkinga zapisane u ISO 6709 Annex H standardu"
+                }
+            }
+        }
+}
