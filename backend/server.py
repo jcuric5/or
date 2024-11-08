@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 CORS(app)
-db_client = MongoClient("mongodb+srv://josipcuric:5229@or.g7eeo.mongodb.net/")
+db_client = MongoClient("mongodb+srv://josipcuric:1234@or.g7eeo.mongodb.net/")
 
 def filter_documents(documents, text, field):
     filter_documents = []
@@ -78,6 +78,10 @@ def search():
 
     documents = db_client["ORLAB"]["ZagrebPristupacnostParkova"].find()
     filtered_docs = [doc for doc in filter_documents(documents, text, field)]
+    
+    for doc in filtered_docs:
+        del doc["_id"]
+
     filtered_docs_json_string = json.dumps(filtered_docs, default=str)
 
     print(filtered_docs_json_string)
