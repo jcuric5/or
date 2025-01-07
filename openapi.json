@@ -1,0 +1,115 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "info": "Pristupačnost gradskih parkova u gradu Zagrebu",
+        "version": "2.0"
+    },
+    "paths": {
+        "/api/v2/parks": {
+            "get": {
+                "summary": "Get resource from collection by ID",
+                "description": "Returns all parks as an array",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "All parks fetched"
+                    },
+                    "500": {
+                        "description": "Internal error"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Creates and inserts a new Park",
+                "description": "Returns the created Park",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Park inserted with a unique ID"
+                    },
+                    "500": {
+                        "description": "Internal error"
+                    }
+                }
+            }
+        },
+        "/api/v2/parks/{id}": {
+            "get": {
+                "summary": "Get Park by ID",
+                "description": "Returns a single Park",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Park ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Park with the given ID fetched"
+                    },
+                    "404": {
+                        "description": "Park with the given ID does not exist"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update Park by ID",
+                "description": "Returns the updated Park",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Park ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Park with the given ID updated"
+                    },
+                    "404": {
+                        "description": "Park with the given ID does not exist"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete Park by ID",
+                "description": "Returns a JSON object with the reuested ID that is now no longer valid",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Park ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Park with the given ID deleted"
+                    },
+                    "404": {
+                        "description": "Park with the given ID does not exist"
+                    }
+                }
+            }
+        }
+    }
+}
