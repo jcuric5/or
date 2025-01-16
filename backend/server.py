@@ -1,13 +1,38 @@
-from flask import Flask, request
+from flask import Flask, request, redirect, url_for, session, send_file, render_template
+from authlib.integrations.flask_client import OAuth
 from flask_cors import CORS
 from pymongo import MongoClient
 from http import HTTPStatus
 from bson.objectid import ObjectId
 import json
+import subprocess
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../")
+app.secret_key = "nijetajna"
 CORS(app)
+
 db_client = MongoClient("mongodb+srv://josipcuric:1234@or.g7eeo.mongodb.net/")
+
+AUTH0_DOMAIN = "dev-bem7xtv5wt8e2c82.us.auth0.com"
+AUTH0_CLIENT_ID = "WD1cTcnHTLfgfwv7GhrCM6Iaa6MCdF2Q"
+AUTH0_CLIENT_SECRET = "8dEL8MULpwkNmdjrLTDzIKhbUqJumjhBkupGNZiFnVpVaONC0jnTkLgfDcRkyLmj"
+AUTH0_CALLBACK_URL = "http://127.0.0.1:5555/callback"
+AUTH0_BASE_URL = f"https://{AUTH0_DOMAIN}"
+
+oauth = OAuth(app)
+auth0 = oauth.register(
+    "auth0",
+    client_id=AUTH0_CLIENT_ID,
+    client_secret=AUTH0_CLIENT_SECRET,
+    api_base_url=AUTH0_BASE_URL,
+    access_token_url=f"{AUTH0_BASE_URL}/oauth/token",
+    authorize_url=f"{AUTH0_BASE_URL}/authorize",
+    client_kwargs={
+        "scope": "openid profile email",
+    },
+    jwks_uri=f"https://{AUTH0_DOMAIN}/.well-known/jwks.json"
+)
 
 def filter_documents(documents, text, field):
     filter_documents = []
@@ -87,6 +112,20 @@ def get_document_with_id(id):
     return requested_doc
 
 def wrap_response(status_code, user_message, response_json):
+    if type(response_json) == list:
+        for i in range(len(response_json)):
+            response_json[i]["@context"] = {
+                "@vocab" : "http://schema.org/",
+                "location" : "GeoCoordinates",
+                "name" : "name"
+            }
+    else:
+        response_json["@context"] = {
+            "@vocab" : "http://schema.org/",
+            "location" : "GeoCoordinates",
+            "name" : "name"
+        }
+    
     upper_level_response = {
         "status" : HTTPStatus(status_code).phrase,
         "message" : user_message,
@@ -94,6 +133,83 @@ def wrap_response(status_code, user_message, response_json):
     }
 
     return json.dumps(upper_level_response, default=str), status_code, {'Content-Type': 'application/json'}
+
+@app.route("/", endpoint="splash")
+def splash():
+    if "user" in session.keys():
+        return redirect(url_for("home"))
+    else:
+        return send_file("../index.html")
+
+@app.route("/home")
+def home():
+    if "user" not in session.keys():
+        return redirect(url_for("splash"))
+    else:
+        return render_template("main.html", user=session["user"]["nickname"])
+
+@app.route("/login")
+def login():
+    if "user" in session.keys():
+        return redirect(url_for("home"))
+    else:
+        return auth0.authorize_redirect(redirect_uri=AUTH0_CALLBACK_URL)
+
+@app.route("/logout")
+def logout():
+    if "user" not in session.keys():
+        return redirect(url_for("splash"))
+    else:
+        del session["user"]
+
+        return redirect(url_for("splash"))
+
+@app.route("/user")
+def user():
+    if "user" not in session.keys():
+        return redirect(url_for("splash"))
+    else:
+        return send_file("../user.html")
+    
+@app.route("/explorer")
+def explorer():
+    if "user" not in session.keys():
+        return redirect(url_for("splash"))
+    else:
+        return send_file("../database.html")
+
+@app.route("/refresh_dump")
+def refresh_dump():
+    if "user" not in session.keys():
+        return redirect(url_for("splash"))
+    
+    subprocess.Popen("export_csv.bat", shell=True, cwd="D:\\curic\\Desktop\\FER\\7. semestar\\Otvoreno računarstvo\\Laboratorijske vježbe\\or\\backend")
+    subprocess.Popen("export_json.bat", shell=True, cwd="D:\\curic\\Desktop\\FER\\7. semestar\\Otvoreno računarstvo\\Laboratorijske vježbe\\or\\backend")
+
+    return redirect(url_for("user"))
+
+@app.route("/ZagrebPristupacnostParkova.csv")
+def dump_csv():
+    return send_file("./ZagrebPristupacnostParkova.csv")
+
+@app.route("/ZagrebPristupacnostParkova.json")
+def dump_json():
+    return send_file("./ZagrebPristupacnostParkova.json")
+
+@app.route("/callback")
+def callback():
+    token = auth0.authorize_access_token()
+    session["user"] = token["userinfo"]
+
+    return redirect(url_for("home"))
+
+@app.route("/main.css")
+def serve_css():
+    return send_file("../frontend/main.css")
+
+@app.route("/main.js")
+def serve_js():
+    return send_file("../frontend/main.js")
 
 @app.route("/search", methods=["GET"])
 def search():
@@ -103,8 +219,14 @@ def search():
     documents = db_client["ORLAB"]["ZagrebPristupacnostParkova"].find()
     filtered_docs = [doc for doc in filter_documents(documents, text, field)]
     
-    for doc in filtered_docs:
+    for i, doc in enumerate(filtered_docs):
         del doc["_id"]
+        
+        filtered_docs[i]["@context"] = {
+            "@vocab": "http://schema.org/",
+            "location": "GeoCoordinates",
+            "name" : "name"
+        }
 
     filtered_docs_json_string = json.dumps(filtered_docs, default=str)
 

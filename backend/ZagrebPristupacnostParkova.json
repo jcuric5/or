@@ -1,31 +1,14 @@
 [
   {
-    "name": "Park Adolfa Mošinskog",
-    "location": "+45.8016781+15.9762124CRSWGS_84/",
-    "area": 13701,
-    "purpose": [
-      "LEISURE",
-      "PLAYGROUND"
-    ],
-    "entrances": [
-      "+45.801959+15.973991CRSWGS_84/",
-      "+45.802105+15.976037CRSWGS_84/",
-      "+45.802086+15.976191CRSWGS_84/",
-      "+45.801955+15.974632CRSWGS_84/",
-      "+45.801374+15.974691CRSWGS_84/",
-      "+45.801265+15.975292CRSWGS_84/"
-    ],
-    "nearest_bus_stop": "+45.801872+15.9761102CRSWGS_84/",
-    "nearest_tram_stop": "+45.8006061+15.9754799CRSWGS_84/",
-    "nearest_train_stop": "45.804614+15.978810CRSWGS_84/",
-    "nearest_parking": "+45.8011579+15.9747273CRSWGS_84/",
     "@context": {
       "@vocab": "http://schema.org/",
       "location": "GeoCoordinates",
+      "nearest_bus_stop": "GeoCoordinates",
+      "nearest_tram_stop": "GeoCoordinates",
+      "nearest_train_stop": "GeoCoordinates",
+      "nearest_parking": "GeoCoordinates",
       "area": "area"
-    }
-  },
-  {
+    },
     "name": "Park Vjekoslava Majera",
     "location": "+45.7806235+15.9905192CRSWGS_84/",
     "area": 62590,
@@ -51,12 +34,7 @@
     "nearest_bus_stop": "+45.777701+15.991562CRSWGS_84/",
     "nearest_tram_stop": "+45.777789+15.991300CRSWGS_84/",
     "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
-    "nearest_parking": "+45.778320+15.989106CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.778320+15.989106CRSWGS_84/"
   },
   {
     "name": "Park Ribnjak",
@@ -76,12 +54,7 @@
     "nearest_bus_stop": "+45.818853+15.979184CRSWGS_84/",
     "nearest_tram_stop": "+45.819988+15.979423CRSWGS_84/",
     "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
-    "nearest_parking": "+45.814481+15.981614CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.814481+15.981614CRSWGS_84/"
   },
   {
     "name": "Park šuma Tuškanac",
@@ -104,12 +77,7 @@
     "nearest_bus_stop": "+45.821292+15.968654CRSWGS_84/",
     "nearest_tram_stop": "+45.813289+15.969710CRSWGS_84/",
     "nearest_train_stop": "+45.809178+15.954241CRSWGS_84/",
-    "nearest_parking": "+45.816421+15.969890CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.816421+15.969890CRSWGS_84/"
   },
   {
     "name": "Park kralja Petra Krešimira IV",
@@ -135,12 +103,7 @@
     "nearest_bus_stop": "+45.813061+15.998834CRSWGS_84/",
     "nearest_tram_stop": "+45.807796+15.991651CRSWGS_84/",
     "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
-    "nearest_parking": "+45.803899+15.994167CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.803899+15.994167CRSWGS_84/"
   },
   {
     "name": "Park Bundek",
@@ -180,12 +143,7 @@
     "nearest_bus_stop": "+45.787601+15.981401CRSWGS_84/",
     "nearest_tram_stop": "+45.777789+15.991300CRSWGS_84/",
     "nearest_train_stop": "+45.804614+15.978810CRSWGS_84/",
-    "nearest_parking": "+45.783546+15.983358CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.783546+15.983358CRSWGS_84/"
   },
   {
     "name": "Park Mladenaca",
@@ -213,12 +171,7 @@
     "nearest_bus_stop": "+45.776907+15.964093CRSWGS_84/",
     "nearest_tram_stop": "+45.777139+15.965139CRSWGS_84/",
     "nearest_train_stop": "+45.766490+15.945836CRSWGS_84/",
-    "nearest_parking": "+45.782600+15.979240CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.782600+15.979240CRSWGS_84/"
   },
   {
     "name": "Park pravednika među narodima",
@@ -242,12 +195,7 @@
     "nearest_bus_stop": "+45.806933+15.944013CRSWGS_84/",
     "nearest_tram_stop": "+45.813356+15.942316CRSWGS_84/",
     "nearest_train_stop": "+45.809187+15.954244CRSWGS_84/",
-    "nearest_parking": "+45.803611+15.963404CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.803611+15.963404CRSWGS_84/"
   },
   {
     "name": "Park dr. Franje Tuđmana",
@@ -273,12 +221,7 @@
     "nearest_bus_stop": "+45.812650+15.955161CRSWGS_84/",
     "nearest_tram_stop": "+45.813102+15.956527CRSWGS_84/",
     "nearest_train_stop": "+45.809187+15.954244CRSWGS_84/",
-    "nearest_parking": "+45.811110+15.955225CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.811110+15.955225CRSWGS_84/"
   },
   {
     "name": "Park Maksimir",
@@ -316,11 +259,6 @@
     "nearest_bus_stop": "+45.819443+16.012876CRSWGS_84/",
     "nearest_tram_stop": "+45.818867+16.013616CRSWGS_84/",
     "nearest_train_stop": "+45.814052+16.023669CRSWGS_84/",
-    "nearest_parking": "+45.818471+16.016148CRSWGS_84/",
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "location": "GeoCoordinates",
-      "area": "area"
-    }
+    "nearest_parking": "+45.818471+16.016148CRSWGS_84/"
   }
 ]
